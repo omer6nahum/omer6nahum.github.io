@@ -26,6 +26,19 @@
     "bibtex": "@inproceedings{shlomi2025transition,\n  title={Transition Function Prediction in AI Planning Using LLMs},\n  author={Shlomi, Eliezer and Azran, Guy and Shapira, Eilam and Nahum, Omer and Reichart, Roi and Uziel, Guy and Katz, Michael and Tavor, Ateret Anaby and Keren, Sarah},\n  booktitle={AAAI Workshop on Language Models for Planning (LM4Plan)},\n  year={2025},\n  url={https://openreview.net/forum?id=SPRYlWKaPj}\n}"
   },
   {
+    "title": "Motivation in Large Language Models",
+    "authors": ["Omer Nahum", "Asael Sklar", "Ariel Goldstein", "Roi Reichart"],
+    "year": 2026,
+    "venue": "arXiv preprint (under review)",
+    "abstract": "Motivation is a central driver of human behavior, shaping decisions, goals, and task performance. As large language models (LLMs) become increasingly aligned with human preferences, we ask whether they exhibit something akin to motivation. We examine whether LLMs \"report\" varying levels of motivation, how these reports relate to their behavior, and whether external factors can influence them. Our experiments reveal consistent and structured patterns that echo human psychology: self-reported motivation aligns with different behavioral signatures, varies across task types, and can be modulated by external manipulations. These findings demonstrate that motivation is a coherent organizing construct for LLM behavior, systematically linking reports, choices, effort, and performance, and revealing motivational dynamics that resemble those documented in human psychology. This perspective deepens our understanding of model behavior and its connection to human-inspired concepts.",
+    "pdf_link": "https://arxiv.org/pdf/2603.14347.pdf",
+    "github_repo": "https://github.com/omer6nahum/motivation_llms",
+    "poster": null,
+    "video": null,
+    "project_page": null,
+    "bibtex": "@article{nahum2026motivation,\n  title = {Motivation in Large Language Models},\n  author = {Nahum, Omer and Sklar, Asael and Goldstein, Ariel and Reichart, Roi},\n  journal = {arXiv preprint arXiv:2603.14347},\n  year = {2026},\n  url = {https://arxiv.org/abs/2603.14347},\n  doi = {10.48550/arXiv.2603.14347}\n}"
+  },
+  {
     "title": "Decongestion by Representation: Learning to Improve Economic Welfare in Marketplaces",
     "authors": ["Omer Nahum", "Gali Noti", "David Parkes", "Nir Rosenfeld"],
     "year": 2024,
