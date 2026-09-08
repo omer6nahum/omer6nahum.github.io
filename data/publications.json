@@ -3,7 +3,7 @@
     "title": "Are LLMs Better than Reported? Detecting Label Errors and Mitigating Their Effect on Model Performance",
     "authors": ["Omer Nahum", "Nitay Calderon", "Orgad Keller", "Idan Szpektor", "Roi Reichart"],
     "year": 2025,
-    "venue": "EMNLP 2025",
+    "venue": "EMNLP 2025 (Main)",
     "abstract": "NLP benchmarks rely on standardized datasets for training and evaluating models and are crucial for advancing the field. Traditionally, expert annotations ensure high-quality labels; however, the cost of expert annotation does not scale well with the growing demand for larger datasets required by modern models. While crowd-sourcing provides a more scalable solution, it often comes at the expense of annotation precision and consistency. Recent advancements in large language models (LLMs) offer new opportunities to enhance the annotation process, particularly for detecting label errors in existing datasets. In this work, we consider the recent approach of LLM-as-a-judge, leveraging an ensemble of LLMs to flag potentially mislabeled examples. We conduct a case study on four factual consistency datasets from the TRUE benchmark, spanning diverse NLP tasks, and on SummEval, which uses Likert-scale ratings of summary quality across multiple dimensions. We empirically analyze the labeling quality of existing datasets and compare expert, crowd-sourced, and LLM-based annotations in terms of the agreement, label quality, and efficiency, demonstrating the strengths and limitations of each annotation method. Our findings reveal a substantial number of label errors, which, when corrected, induce a significant upward shift in reported model performance. This suggests that many of the LLMs' so-called mistakes are due to label errors rather than genuine model failures. Additionally, we discuss the implications of mislabeled data and propose methods to mitigate them in training to improve performance.",
     "pdf_link": "https://aclanthology.org/2025.emnlp-main.1360.pdf",
     "github_repo": null,
@@ -50,5 +50,18 @@
     "video": null,
     "project_page": null,
     "bibtex": "@inproceedings{nahum2024decongestion,\n  title={Decongestion by Representation: Learning to Improve Economic Welfare in Marketplaces},\n  author={Nahum, Omer and Noti, Gali and Parkes, David and Rosenfeld, Nir},\n  booktitle={International Conference on Learning Representations (ICLR)},\n  year={2024},\n  url={https://openreview.net/forum?id=coIaBY8EVF}\n}"
+  },
+  {
+    "title": "From Answers to Interpretations: Rethinking Ambiguity-Induced Aleatoric Uncertainty Estimation in LLMs",
+    "authors": ["Omer Nahum", "Niv Nayman", "Jonathan Fhima", "Alon Zolfi", "Jeremy Levy", "Shai Mazor", "Paolo Favaro"],
+    "year": 2026,
+    "venue": "EMNLP 2026 (Findings)",
+    "abstract": "A key challenge in reliable LLM deployment is recognizing when uncertainty reflects irreducible variability in the task rather than limitations in the model's knowledge. In language tasks, a central source of such aleatoric uncertainty is input ambiguity or underspecification, where multiple interpretations remain plausible. Existing decomposition methods estimate aleatoric uncertainty by generating multiple clarifications of the input, querying the model for an answer under each clarification, and comparing the resulting answers. We argue that answers are not necessary for identifying ambiguity: they are often redundant, add avoidable cost, and can mislead through epistemic leakage. We support this claim theoretically, and propose a clarification-only approach that estimates this ambiguity-induced component directly from the space of plausible interpretations, without answers to the clarified inputs. Using ambiguity detection as an operational evaluation across three benchmarks, this direct approach improves AUROC (63.34 vs. 60.85), reduces computational cost by 4–26× in output tokens and 2.2–3.5× in API calls, and yields estimates with substantially lower correlation with epistemic uncertainty. Overall, our results suggest that ambiguity-induced aleatoric uncertainty is better estimated from the interpretation space than from the response space.",
+    "pdf_link": "https://arxiv.org/pdf/2609.04543.pdf",
+    "github_repo": null,
+    "poster": null,
+    "video": null,
+    "project_page": null,
+    "bibtex": null
   }
 ]

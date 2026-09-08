@@ -65,7 +65,8 @@ h1,h2{color:var(--navy);}
 .pub{padding:14px; border:1px solid var(--border); border-radius:12px; background:var(--card);}
 .pub .title{font-weight:600; color:var(--navy);}
 .pub .meta{color:var(--muted); font-size:.92rem; margin-top:2px;}
-.badge{padding:2px 8px; font-size:.78rem; border-radius:999px; background:#dbeafe; border:1px solid #bfdbfe; color:#1e40af; margin-left:8px; font-weight:400;}
+.venue-line{margin-top:6px;}
+.badge{padding:2px 8px; font-size:.78rem; border-radius:999px; background:#dbeafe; border:1px solid #bfdbfe; color:#1e40af; font-weight:400;}
 .pub-links{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-top:8px;}
 
 /* Pill buttons */

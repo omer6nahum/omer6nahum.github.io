@@ -21,12 +21,15 @@ async function renderPublications(containerId) {
       pub.video       ? `<a class="btn-link" href="${pub.video}" target="_blank" rel="noopener">Video</a>` : '',
     ].filter(Boolean).join('');
 
+    const authors = pub.authors
+      .map(a => a === 'Omer Nahum' ? `<strong>${a}</strong>` : a)
+      .join(', ');
+
     return `
       <li class="pub">
-        <div class="title">${pub.title}
-          <span class="badge">${pub.venue}</span>
-        </div>
-        <div class="meta">${pub.authors.join(', ')}</div>
+        <div class="title">${pub.title}</div>
+        <div class="meta">${authors}</div>
+        <div class="venue-line"><span class="badge">${pub.venue}</span></div>
         <div class="pub-links">${links}</div>
         ${pub.abstract ? `<div class="abstract-body" hidden><p>${pub.abstract}</p></div>` : ''}
       </li>`;
