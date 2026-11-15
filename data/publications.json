@@ -1,5 +1,44 @@
 [
   {
+    "title": "Same Behavior, Different Stakes: Rethinking How We Study, Interpret, and Shape LLM Decision-making",
+    "authors": ["Omer Madmon*", "Omer Nahum*", "Roi Reichart"],
+    "year": 2026,
+    "venue": "SSRN preprint",
+    "abstract": "Large language models (LLMs) are increasingly studied and deployed as rational agents, models of human behavior, and collaborative decision-making systems. Yet, the same observed behavior can support different conclusions depending on what the model represents and how it is evaluated. Such differences are familiar from studies of human behavior, but the pace of LLM research and reuse of models across settings make them particularly pressing. Inspired by fundamental research contributions at the intersection of AI, game theory and behavioral economics, we propose a taxonomy for making behavioral interpretations of LLMs explicit. We examine how these interpretations should inform research, evaluation, deployment, and the deliberate shaping of LLM behavior. We advocate multidisciplinary awareness to consider alternative interpretations, assess which conclusions remain justified under them, and support exchange between behavioral science and AI. Finally, we discuss limitations of the framework and the scientific and societal risks of interpretive mismatch.",
+    "pdf_link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7679239",
+    "github_repo": null,
+    "poster": null,
+    "video": null,
+    "project_page": null,
+    "bibtex": "@misc{madmon-nahum-2026-same,\n  title = {Same Behavior, Different Stakes: Rethinking How We Study, Interpret, and Shape {LLM} Decision-making},\n  author = {Madmon, Omer and Nahum, Omer and Reichart, Roi},\n  year = {2026},\n  month = oct,\n  note = {Available at SSRN: https://ssrn.com/abstract=7679239},\n  howpublished = {SSRN preprint},\n  url = {https://ssrn.com/abstract=7679239}\n}"
+  },
+  {
+    "title": "From Answers to Interpretations: Rethinking Ambiguity-Induced Aleatoric Uncertainty Estimation in LLMs",
+    "authors": ["Omer Nahum", "Niv Nayman", "Jonathan Fhima", "Alon Zolfi", "Jeremy Levy", "Shai Mazor", "Paolo Favaro"],
+    "year": 2026,
+    "venue": "EMNLP 2026 (Findings)",
+    "abstract": "A key challenge in reliable LLM deployment is recognizing when uncertainty reflects irreducible variability in the task rather than limitations in the model's knowledge. In language tasks, a central source of such aleatoric uncertainty is input ambiguity or underspecification, where multiple interpretations remain plausible. Existing decomposition methods estimate aleatoric uncertainty by generating multiple clarifications of the input, querying the model for an answer under each clarification, and comparing the resulting answers. We argue that answers are not necessary for identifying ambiguity: they are often redundant, add avoidable cost, and can mislead through epistemic leakage. We support this claim theoretically, and propose a clarification-only approach that estimates this ambiguity-induced component directly from the space of plausible interpretations, without answers to the clarified inputs. Using ambiguity detection as an operational evaluation across three benchmarks, this direct approach improves AUROC (63.34 vs. 60.85), reduces computational cost by 4–26× in output tokens and 2.2–3.5× in API calls, and yields estimates with substantially lower correlation with epistemic uncertainty. Overall, our results suggest that ambiguity-induced aleatoric uncertainty is better estimated from the interpretation space than from the response space.",
+    "pdf_link": "https://aclanthology.org/2026.findings-emnlp.2455.pdf",
+    "github_repo": null,
+    "poster": null,
+    "video": null,
+    "project_page": null,
+    "bibtex": "@inproceedings{nahum-etal-2026-answers,\n    title = \"From Answers to Interpretations: Rethinking Ambiguity-Induced Aleatoric Uncertainty Estimation in {LLM}s\",\n    author = \"Nahum, Omer and Nayman, Niv and Fhima, Jonathan and Zolfi, Alon and Levy, Jeremy and Mazor, Shai and Favaro, Paolo\",\n    booktitle = \"Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026\",\n    month = oct,\n    year = \"2026\",\n    address = \"Budapest, Hungary\",\n    publisher = \"Association for Computational Linguistics\",\n    url = \"https://aclanthology.org/2026.findings-emnlp.2455/\",\n    doi = \"10.18653/2026.findings-emnlp.2455\",\n    pages = \"52799--52827\"\n}"
+  },
+  {
+    "title": "Motivation in Large Language Models",
+    "authors": ["Omer Nahum", "Asael Sklar", "Ariel Goldstein", "Roi Reichart"],
+    "year": 2026,
+    "venue": "arXiv preprint (under review)",
+    "abstract": "Motivation is a central driver of human behavior, shaping decisions, goals, and task performance. As large language models (LLMs) become increasingly aligned with human preferences, we ask whether they exhibit something akin to motivation. We examine whether LLMs \"report\" varying levels of motivation, how these reports relate to their behavior, and whether external factors can influence them. Our experiments reveal consistent and structured patterns that echo human psychology: self-reported motivation aligns with different behavioral signatures, varies across task types, and can be modulated by external manipulations. These findings demonstrate that motivation is a coherent organizing construct for LLM behavior, systematically linking reports, choices, effort, and performance, and revealing motivational dynamics that resemble those documented in human psychology. This perspective deepens our understanding of model behavior and its connection to human-inspired concepts.",
+    "pdf_link": "https://arxiv.org/pdf/2603.14347.pdf",
+    "github_repo": "https://github.com/omer6nahum/motivation_llms",
+    "poster": null,
+    "video": null,
+    "project_page": null,
+    "bibtex": "@article{nahum2026motivation,\n  title = {Motivation in Large Language Models},\n  author = {Nahum, Omer and Sklar, Asael and Goldstein, Ariel and Reichart, Roi},\n  journal = {arXiv preprint arXiv:2603.14347},\n  year = {2026},\n  url = {https://arxiv.org/abs/2603.14347},\n  doi = {10.48550/arXiv.2603.14347}\n}"
+  },
+  {
     "title": "Are LLMs Better than Reported? Detecting Label Errors and Mitigating Their Effect on Model Performance",
     "authors": ["Omer Nahum", "Nitay Calderon", "Orgad Keller", "Idan Szpektor", "Roi Reichart"],
     "year": 2025,
@@ -26,19 +65,6 @@
     "bibtex": "@inproceedings{shlomi2025transition,\n  title={Transition Function Prediction in AI Planning Using LLMs},\n  author={Shlomi, Eliezer and Azran, Guy and Shapira, Eilam and Nahum, Omer and Reichart, Roi and Uziel, Guy and Katz, Michael and Tavor, Ateret Anaby and Keren, Sarah},\n  booktitle={AAAI Workshop on Language Models for Planning (LM4Plan)},\n  year={2025},\n  url={https://openreview.net/forum?id=SPRYlWKaPj}\n}"
   },
   {
-    "title": "Motivation in Large Language Models",
-    "authors": ["Omer Nahum", "Asael Sklar", "Ariel Goldstein", "Roi Reichart"],
-    "year": 2026,
-    "venue": "arXiv preprint (under review)",
-    "abstract": "Motivation is a central driver of human behavior, shaping decisions, goals, and task performance. As large language models (LLMs) become increasingly aligned with human preferences, we ask whether they exhibit something akin to motivation. We examine whether LLMs \"report\" varying levels of motivation, how these reports relate to their behavior, and whether external factors can influence them. Our experiments reveal consistent and structured patterns that echo human psychology: self-reported motivation aligns with different behavioral signatures, varies across task types, and can be modulated by external manipulations. These findings demonstrate that motivation is a coherent organizing construct for LLM behavior, systematically linking reports, choices, effort, and performance, and revealing motivational dynamics that resemble those documented in human psychology. This perspective deepens our understanding of model behavior and its connection to human-inspired concepts.",
-    "pdf_link": "https://arxiv.org/pdf/2603.14347.pdf",
-    "github_repo": "https://github.com/omer6nahum/motivation_llms",
-    "poster": null,
-    "video": null,
-    "project_page": null,
-    "bibtex": "@article{nahum2026motivation,\n  title = {Motivation in Large Language Models},\n  author = {Nahum, Omer and Sklar, Asael and Goldstein, Ariel and Reichart, Roi},\n  journal = {arXiv preprint arXiv:2603.14347},\n  year = {2026},\n  url = {https://arxiv.org/abs/2603.14347},\n  doi = {10.48550/arXiv.2603.14347}\n}"
-  },
-  {
     "title": "Decongestion by Representation: Learning to Improve Economic Welfare in Marketplaces",
     "authors": ["Omer Nahum", "Gali Noti", "David Parkes", "Nir Rosenfeld"],
     "year": 2024,
@@ -50,18 +76,5 @@
     "video": null,
     "project_page": null,
     "bibtex": "@inproceedings{nahum2024decongestion,\n  title={Decongestion by Representation: Learning to Improve Economic Welfare in Marketplaces},\n  author={Nahum, Omer and Noti, Gali and Parkes, David and Rosenfeld, Nir},\n  booktitle={International Conference on Learning Representations (ICLR)},\n  year={2024},\n  url={https://openreview.net/forum?id=coIaBY8EVF}\n}"
-  },
-  {
-    "title": "From Answers to Interpretations: Rethinking Ambiguity-Induced Aleatoric Uncertainty Estimation in LLMs",
-    "authors": ["Omer Nahum", "Niv Nayman", "Jonathan Fhima", "Alon Zolfi", "Jeremy Levy", "Shai Mazor", "Paolo Favaro"],
-    "year": 2026,
-    "venue": "EMNLP 2026 (Findings)",
-    "abstract": "A key challenge in reliable LLM deployment is recognizing when uncertainty reflects irreducible variability in the task rather than limitations in the model's knowledge. In language tasks, a central source of such aleatoric uncertainty is input ambiguity or underspecification, where multiple interpretations remain plausible. Existing decomposition methods estimate aleatoric uncertainty by generating multiple clarifications of the input, querying the model for an answer under each clarification, and comparing the resulting answers. We argue that answers are not necessary for identifying ambiguity: they are often redundant, add avoidable cost, and can mislead through epistemic leakage. We support this claim theoretically, and propose a clarification-only approach that estimates this ambiguity-induced component directly from the space of plausible interpretations, without answers to the clarified inputs. Using ambiguity detection as an operational evaluation across three benchmarks, this direct approach improves AUROC (63.34 vs. 60.85), reduces computational cost by 4–26× in output tokens and 2.2–3.5× in API calls, and yields estimates with substantially lower correlation with epistemic uncertainty. Overall, our results suggest that ambiguity-induced aleatoric uncertainty is better estimated from the interpretation space than from the response space.",
-    "pdf_link": "https://arxiv.org/pdf/2609.04543.pdf",
-    "github_repo": null,
-    "poster": null,
-    "video": null,
-    "project_page": null,
-    "bibtex": null
   }
 ]

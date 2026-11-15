@@ -9,7 +9,8 @@ async function renderPublications(containerId) {
 
   const resp = await fetch('data/publications.json');
   const pubs = await resp.json();
-  _sortedPubs = pubs.sort((a, b) => b.year - a.year || a.title.localeCompare(b.title));
+  // Newest year first; within a year, keep the order in publications.json (list newest first there).
+  _sortedPubs = pubs.sort((a, b) => b.year - a.year);
 
   container.innerHTML = _sortedPubs.map((pub, i) => {
     const links = [
@@ -22,14 +23,15 @@ async function renderPublications(containerId) {
     ].filter(Boolean).join('');
 
     const authors = pub.authors
-      .map(a => a === 'Omer Nahum' ? `<strong>${a}</strong>` : a)
+      .map(a => a.replace(/\*$/, '') === 'Omer Nahum' ? `<strong>${a}</strong>` : a)
       .join(', ');
 
     return `
       <li class="pub">
         <div class="title">${pub.title}</div>
         <div class="meta">${authors}</div>
-        <div class="venue-line"><span class="badge">${pub.venue}</span></div>
+        ${pub.authors.some(a => a.endsWith('*')) ? `<div class="equal-note">* Equal contribution</div>` : ''}
+        <div class="venue-line"><span class="badge">${pub.venue}</span><span class="pub-year">${pub.year}</span></div>
         <div class="pub-links">${links}</div>
         ${pub.abstract ? `<div class="abstract-body" hidden><p>${pub.abstract}</p></div>` : ''}
       </li>`;
